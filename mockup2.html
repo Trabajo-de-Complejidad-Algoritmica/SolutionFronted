@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización del Grafo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Visualización del grafo</h3>
+
+        <div class="controls">
+            <label>Selecciona un país de origen:</label>
+            <input type="text" placeholder="País de origen">
+
+            <label>Selecciona un país de destino:</label>
+            <input type="text" placeholder="País de destino">
+
+            <h4>Filtros adicionales</h4>
+            <hr>
+            <label>Valor de Paz:</label>
+            <input type="text" placeholder="Ej: 1.5">
+
+            <label>Valor de la corrupción:</label>
+            <input type="text" placeholder="Ej: 30">
+
+            <label>Mostrar comunidades (Louvain):</label>
+            <input type="checkbox">
+
+            <hr>
+            <h4>¿Qué algoritmo de búsqueda quiere?</h4>
+            <label><input type="radio" name="algoritmo"> BFS</label><br>
+            <label><input type="radio" name="algoritmo"> DFS</label><br>
+            <label><input type="radio" name="algoritmo"> Dijkstra</label><br>
+        </div>
+
+        <div class="graph-result">
+            <h4>Grafo con la ruta resultante:</h4>
+            <img src="https://zalimben.github.io/images/graph/graph-bucle.svg" alt="Grafo" width="670">
+        </div>
+
+        <div class="data">
+            <h4>Datos complementarios</h4>
+            <ul>
+                <li>GPI: (Datos que muestra el sistema)</li>
+                <li>CPI: (Datos que muestra el sistema)</li>
+                <li>Militarización: (Datos que muestra el sistema)</li>
+            </ul>
+        </div>
+
+        <div class="legend">
+            <h4>Leyenda:</h4>
+            <ul>
+                <li style="color: #f7dc6f;">País de origen</li>
+                <li style="color: #58d68d;">País de destino</li>
+                <li style="color: #bb8fce;">Ruta más óptima</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
